@@ -1,0 +1,21 @@
+/*.border{
+    border-left-color: white;
+    border-right-color: white;
+  
+}
+.addAndClear{
+    margin:10px;
+}
+hr{
+    margin-right: 25%;
+}*/
+
+
+*{
+    margin-right: 25%;
+}
+.shoppingList{
+    cursor:pointer;
+   
+
+}

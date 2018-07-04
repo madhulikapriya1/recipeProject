@@ -1,0 +1,25 @@
+<!-- <a href="#"></a>
+
+ <div class="row" [ngClass] = "['border']">
+   <div class="col-xs-8">
+     <h3>{{recipe.name}}</h3>
+     <p>{{recipe.description}}</p>
+   </div>
+   <div class="col-xs-4">
+     <img [src]="recipe.imgPath" class="img img-responsive"
+      [ngStyle]="{'width':imgWidth,'height':imgHeight, 'padding-top':padding, 'float':float}">
+   </div>
+ </div>
+</a> -->
+
+
+<a href="#" class="list-group-item clearfix" (click) = "onClick()" >
+    <div class="pull-left">
+      <h3 class="list-group-item-heading">{{recipe.name}}</h3>
+      <p class="list-group-item-text">{{recipe.description}}</p>
+    </div>
+      <span class="pull-right">
+        <img [src]="recipe.imgPath"  class="img img-responsive" alt="" srcset=""  [ngStyle]="{'width':imgWidth,'height':imgHeight, 'padding-top':padding, 'float':float}">
+      </span>
+  
+    </a>

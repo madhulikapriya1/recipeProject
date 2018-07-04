@@ -1,0 +1,27 @@
+nav a {
+  padding: 5px 15px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  
+  
+}
+nav a:visited, a:link {
+  color: grey;
+  
+
+}
+nav a:visited{
+  background-color: blue;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #cfd8dc;
+}
+nav a.active {
+ 
+  background-color:lightgray;
+}
+h3{
+    padding-bottom: 10px;
+}

@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)" novalidate>
+        <div class="col-xs-8">
+          <label class="control-label">Name</label>
+          <input type="text" class="form-control" formControlName="name">
+        </div>
+        <div class="col-xs-4">
+          <label class="control-label">Amount</label>
+          <input type="number" class="form-control" [ngClass]="['border']" formControlName="amount">
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row" [ngClass]="['addAndClear']">
+    <div>
+      <!-- <button type="submit" class="btn btn-success" (click)="add()">Add</button> -->
+      <button type="button" class="btn btn-success" [disabled]="myForm.invalid" (click)="add()">{{editMode ? 'update' : 'Add'}}</button>
+      <button type="button" class="btn btn-info" (click)="onClear()">Clear</button>
+      <button type="button" class="btn btn-danger" (click)="onDelete()">Delete</button>
+    </div>
+  </div>
+</div>

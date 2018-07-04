@@ -1,0 +1,13 @@
+a{
+ text-decoration: none;
+ text-decoration-style: none;
+ 
+ border-top: 2px solid gray;
+
+}
+
+.border{
+    border:2px solid gray;
+    
+}
+

@@ -1,0 +1,14 @@
+
+<!-- <h2 [ngClass]="['headingRecipeSelect']">Please select a Recipe!</h2> -->
+
+<div class="col-md-5">
+        <app-recipe-list (recipeWhichSelected)="selectedRecipe=$event"></app-recipe-list>
+</div>
+<div class="col-md-7">
+        <app-recipe-detail *ngIf="selectedRecipe; else pleaseSelect" [recipe]="selectedRecipe" ></app-recipe-detail>
+            <ng-template #pleaseSelect>
+                <p>Please select a Recipe!</p>
+            </ng-template>
+        
+</div>
+

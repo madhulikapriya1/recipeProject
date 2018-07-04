@@ -1,0 +1,48 @@
+<!--<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <div class="col-xs-8">
+        <label class="control-label">Name</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-xs-4">
+        <label class="control-label">Amount</label>
+        <input type="text" class="form-control" [ngClass]="['border']">
+      </div>
+  </div>
+      </div>
+      <div class="row" [ngClass]="['addAndClear']">
+        <div>
+        <button class="btn btn-success">Add</button>
+        <button class="btn btn-info">Clear</button>
+        </div>
+      </div>
+      <hr>
+      <app-shopping-list-edit></app-shopping-list-edit>
+    
+</div>-->
+
+
+<div class="container">
+  <div class="row">
+    <!-- <app-shopping-list-edit 
+      (ingredientAdd)="onIngredientAdd($event)"
+      ></app-shopping-list-edit>
+       -->
+    <app-shopping-list-edit></app-shopping-list-edit>
+
+    <hr>
+  </div>
+  <ul class="list-group">
+
+
+    <li class="list-group-item" [ngClass]="['shoppingList']" *ngFor="let ingredient of ingredients" let i=index, (click)="shoppingItem(i)">
+      {{ingredient.name}} {{ingredient.amount}}
+    </li>
+
+
+
+  </ul>
+
+
+</div>

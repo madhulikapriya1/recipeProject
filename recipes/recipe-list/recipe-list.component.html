@@ -1,0 +1,38 @@
+
+  
+      <div class="row">
+          <div class="col-xs-12">
+            <button class="btn btn-success">
+           New Recipe
+         </button>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-12">
+       
+            <app-recipe-item *ngFor="let recipe of recipes" 
+            [recipe]="recipe" (recipeSelected)="onRecipe(recipe)"
+            ></app-recipe-item> 
+          </div>
+        </div>
+ 
+ 
+    
+      
+             <!-- <a routerLink="" *ngFor="let recipe of recipes" >
+
+          <div class="row" [ngClass] = "['border']">
+            <div class="col-xs-8">
+              <h3>{{recipe.name}}</h3>
+              <p>{{recipe.description}}</p>
+            </div>
+            <div class="col-xs-4">
+              <img [src]="recipe.imgPath" class="img img-responsive"
+               [ngStyle]="{'width':imgWidth,'height':imgHeight, 'padding-top':padding, 'float':float}">
+            </div>
+          </div>
+        </a> -->
+       
+       
+      

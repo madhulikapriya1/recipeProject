@@ -1,0 +1,48 @@
+<!--<p>
+  recipe-detail works!
+</p>
+<div *ngIf="recipe">
+
+  <h2>{{ recipe.name }} Details</h2>
+  <div><span>name: </span>{{recipe.name}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="recipe.name" placeholder="name"/>
+    </label>
+  </div>
+
+</div>-->
+
+
+
+<div class="row">
+<div class="col-xs-12">
+  <img [src]="recipe.imgPath" class="img img-responsive"/>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-xs-12">
+       <h1>{{recipe.name}}</h1>      
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="btn-group" appDropdown>
+        <button type="button" class="btn btn-primary dropdown-toggle">
+          Manage Recipe
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Recipe</a></li>
+          <li><a href="#">Shopping-list</a></li>
+          
+        </ul>
+      </div>     
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <!-- Description -->
+    {{recipe.description}}
+    </div>
+  </div>
